@@ -4,7 +4,7 @@
  * Plugin URI:        http://planetozh.com/blog/my-projects/wordpress-plugin-fart-scroll-theonion/
  * GitHub Plugin URI: https://github.com/ozh/fartscroll
  * Description:       "You want fart noises as you scroll? We've got you covered." A WordPress implementation of TheOnion's <a href="http://theonion.github.io/fartscroll.js/">Fartscroll.js</a> elegant piece of software
- * Version:           1.0.1
+ * Version:           1.0.2
  * Requires at least: 3.0
  * Requires PHP:      5.6
  * Author:            Ozh & TheOnion
