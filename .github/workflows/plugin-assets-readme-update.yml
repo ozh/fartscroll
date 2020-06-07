@@ -21,4 +21,3 @@ jobs:
         env:
           SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }} # Set in repo -> Settings -> Secrets
           SVN_USERNAME: ${{ secrets.SVN_USERNAME }} # Set in repo -> Settings -> Secrets
-          README_NAME: README.md
