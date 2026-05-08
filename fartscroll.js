@@ -59,14 +59,39 @@ fartscroll = function(trigger_distance) {
         prefix = ogg_prefix;
     }
     var lastOffset;
-    
+
+	var audioEnabled = false;
+
+	function unlockAudio() {
+		if (audioEnabled) {
+			return;
+		}
+
+		audioEnabled = true;
+
+		// Warm up one audio element so Firefox/Chrome authorize future play()
+		var player = getplayer();
+
+		player.play()
+			.then(function() {
+				player.pause();
+				player.currentTime = 0;
+			})
+			.catch(function() {});
+	}
+
+	document.addEventListener("click", unlockAudio, { once: true });
+	document.addEventListener("touchstart", unlockAudio, { once: true });
+
     window.onscroll = function() {
         var scrollOffset = Math.floor(window.scrollY / trigger_distance);
         if (lastOffset !== scrollOffset) {
             var rand = Math.floor(Math.random() * audio.length);
             var player = getplayer();
             player.src = prefix + audio[rand];
-            player.play();
+			if (audioEnabled) {
+				player.play().catch(function() {});
+			}
             lastOffset = scrollOffset;
         }
     };

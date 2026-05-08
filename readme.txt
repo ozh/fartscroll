@@ -2,8 +2,8 @@
 Tags: fart, scroll, fartscroll, theonion, smell, prank, ozh
 Donate link: http://planetozh.com/exit/donate
 Requires at least: 3.0
-Tested up to: 5.4.1
-Requires PHP: 5.6
+Tested up to: 6.9.4
+Requires PHP: 7.2
 Stable tag: trunk
 Contributors: ozh
 
@@ -14,6 +14,8 @@ You want fart noises as you scroll? We've got you covered
 "You want fart noises as you scroll? We've got you covered."
 
 A WordPress implementation of TheOnion's [Fartscroll.js](http://theonion.github.io/fartscroll.js/) most elegant piece of software.
+
+Limitations: the plugin is activated after a user "interaction" (click or keypress).
 
 == Installation ==
 
