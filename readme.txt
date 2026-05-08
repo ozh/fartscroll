@@ -3,7 +3,7 @@ Tags: fart, scroll, fartscroll, theonion, smell, prank, ozh
 Donate link: http://planetozh.com/exit/donate
 Requires at least: 3.0
 Tested up to: 6.9.4
-Requires PHP: 7.2
+Requires PHP: 6.9
 Stable tag: trunk
 Contributors: ozh
 
